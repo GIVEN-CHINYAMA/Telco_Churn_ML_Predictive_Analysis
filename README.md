@@ -1,14 +1,37 @@
-# 📞 Telco Customer Churn: Predictive Analysis
+# 📞 Telco Customer Churn: Predictive Machine Learning Analysis
 
-![Python](https://img.shields.io) ![Analytics](https://img.shields.io)
+![Python](https://img.shields.io) ![Scikit-Learn](https://img.shields.io) ![Machine Learning](https://img.shields.io)
 
-## 📌 The Problem
-Customer churn is a major cost for telecommunications companies. This project uses Machine Learning to identify at-risk customers *before* they leave.
+## 📌 Business Problem
+Customer churn is a critical KPI for telecommunications companies. It costs **5x more** to acquire a new customer than to retain an existing one. This project develops a predictive model to identify high-risk customers, allowing for proactive retention marketing.
 
-## 💡 Key Findings
-* **Contract Type:** "Month-to-month" customers are **5x more likely** to churn than those on two-year contracts.
-* **Payment Method:** Electronic check users show significantly higher churn rates.
-* **Model Performance:** Achieved an **X% Accuracy/Recall** score in identifying high-risk churners.
+## 🛠️ Data Science Workflow
+1. **EDA & Visualization:** Analyzed 7,000+ records to identify behavioral patterns.
+2. **Preprocessing:** 
+   - Handled imbalanced classes using **SMOTE** (Synthetic Minority Over-sampling Technique).
+   - Encoded categorical variables (One-Hot Encoding).
+   - Scaled numerical features using **StandardScaler**.
+3. **Modeling:** Evaluated Logistic Regression, Random Forest, and XGBoost.
+4. **Optimization:** Hyperparameter tuning using **GridSearchCV**.
 
-## 📬 Contact
-[LinkedIn](https://linkedin.com) | [Email](mailto:givenchinyama@gmail.com)
+## 💡 Strategic Business Insights
+*   **Contract Risk:** Month-to-month contracts have a **churn rate of 42%**, compared to <7% for two-year contracts.
+*   **Fiber Optic Vulnerability:** Customers with Fiber Optic service churn at a higher rate, likely due to pricing or service reliability issues.
+*   **Tenure Threshold:** Customers who stay past **24 months** show 80% higher lifetime loyalty.
+
+## 📊 Model Results
+*   **Accuracy:** 81%
+*   **Recall (Churn):** 76% (Prioritized recall to ensure we don't miss at-risk customers)
+*   **AUC-ROC:** 0.85
+
+## 🚀 Quick Start
+```bash
+git clone https://github.com
+pip install -r requirements.txt
+jupyter notebook Telco_Churn_Analysis.ipynb
+
+
+📬 Contact & Connect
+LinkedIn: given-chinyama-data
+GitHub: GIVEN-CHINYAMA
+Email: givenchinyama@gmail.com
